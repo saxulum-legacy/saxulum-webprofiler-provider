@@ -3,7 +3,6 @@ saxulum webprofiler provider
 
 **works with plain silex-php**
 
-[![Build Status](https://api.travis-ci.org/saxulum/saxulum-webprofiler-provider.png?branch=master)](https://travis-ci.org/saxulum/saxulum-webprofiler-provider)
 [![Total Downloads](https://poser.pugx.org/saxulum/saxulum-webprofiler-provider/downloads.png)](https://packagist.org/packages/saxulum/saxulum-webprofiler-provider)
 [![Latest Stable Version](https://poser.pugx.org/saxulum/saxulum-webprofiler-provider/v/stable.png)](https://packagist.org/packages/saxulum/saxulum-webprofiler-provider)
 
@@ -30,7 +29,7 @@ Installation
 The [SilexWebProfiler][1] from silex itself is needed!
 
 ```php
-$app->register(new Provider\WebProfilerServiceProvider(), array(
+$app->register(new Silex\Provider\WebProfilerServiceProvider(), array(
     'profiler.cache_dir' => __DIR__.'/../cache/profiler',
     'profiler.mount_prefix' => '/_profiler', // this is the default
 ));

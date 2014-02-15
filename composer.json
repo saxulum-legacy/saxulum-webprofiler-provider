@@ -11,11 +11,11 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "dominikzogg/doctrine-orm-manager-registry-provider": "~1.2",
         "jdorn/sql-formatter": "~1.1",
         "psr/log": "1.0.*",
         "silex/silex": "~1.0",
         "silex/web-profiler": "~1.0",
+        "saxulum/saxulum-doctrine-orm-manager-registry-provider": "~2.0.0",
         "symfony/doctrine-bridge": "~2.3"
     },
     "require-dev": {

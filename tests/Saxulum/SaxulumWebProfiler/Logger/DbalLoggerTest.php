@@ -11,8 +11,6 @@
 
 namespace Saxulum\SaxulumWebProfiler\Logger;
 
-use Saxulum\SaxulumWebProfiler\Logger\DbalLogger;
-
 class DbalLoggerTest extends \PHPUnit_Framework_TestCase
 {
     /**

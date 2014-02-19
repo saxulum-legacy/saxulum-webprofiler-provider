@@ -22,14 +22,14 @@ class SaxulumWebProfilerProvider implements ServiceProviderInterface
     {
         if (isset($app['profiler'])) {
 
-            $app['twig'] = $app->share($app->extend('twig', function(\Twig_Environment $twig) {
+            $app['twig'] = $app->share($app->extend('twig', function (\Twig_Environment $twig) {
                 $twig->addExtension(new DoctrineExtension());
 
                 return $twig;
             }));
 
             $app['twig.loader.filesystem'] = $app->share($app->extend('twig.loader.filesystem',
-                function(\Twig_Loader_Filesystem $twigLoaderFilesystem) {
+                function (\Twig_Loader_Filesystem $twigLoaderFilesystem) {
                     $twigLoaderFilesystem->addPath(dirname(__DIR__). '/Resources/views', 'SaxulumWebProfilerProvider');
 
                     return $twigLoaderFilesystem;

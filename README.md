@@ -6,6 +6,7 @@ saxulum webprofiler provider
 [![Build Status](https://api.travis-ci.org/saxulum/saxulum-webprofiler-provider.png?branch=master)](https://travis-ci.org/saxulum/saxulum-webprofiler-provider)
 [![Total Downloads](https://poser.pugx.org/saxulum/saxulum-webprofiler-provider/downloads.png)](https://packagist.org/packages/saxulum/saxulum-webprofiler-provider)
 [![Latest Stable Version](https://poser.pugx.org/saxulum/saxulum-webprofiler-provider/v/stable.png)](https://packagist.org/packages/saxulum/saxulum-webprofiler-provider)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/saxulum/saxulum-webprofiler-provider/badges/quality-score.png?s=4e315f6511ecfa00815ac2fe232f6117823b7699)](https://scrutinizer-ci.com/g/saxulum/saxulum-webprofiler-provider/)
 
 Features
 --------

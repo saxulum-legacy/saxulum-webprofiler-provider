@@ -14,12 +14,12 @@
         "jdorn/sql-formatter": "~1.1",
         "psr/log": "1.0.*",
         "silex/silex": "~1.0",
-        "silex/web-profiler": "~1.0",
-        "saxulum/saxulum-doctrine-orm-manager-registry-provider": "~2.0",
-        "symfony/doctrine-bridge": "~2.3"
+        "silex/web-profiler": "~1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~3.7"
+        "phpunit/phpunit": "~3.7",
+        "saxulum/saxulum-doctrine-mongodb-odm-manager-registry-provider": "dev-master@dev",
+        "saxulum/saxulum-doctrine-orm-manager-registry-provider": "~2.0"
     },
     "autoload": {
         "psr-0": {

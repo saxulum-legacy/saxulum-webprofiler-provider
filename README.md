@@ -17,7 +17,6 @@ Requirements
 ------------
 
 * php >=5.3
-* dominikzogg/doctrine-orm-manager-registry-provider ~1.2
 * jdorn/sql-formatter ~1.1
 * psr/log 1.0.*
 * silex/silex ~1.0

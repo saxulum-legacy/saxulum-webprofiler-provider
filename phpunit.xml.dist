@@ -12,7 +12,7 @@
         >
     <testsuites>
         <testsuite name="A extended webprofiler for saxulum (silex)">
-            <directory>./tests/Saxulum/</directory>
+            <directory>./tests</directory>
         </testsuite>
     </testsuites>
     <filter>

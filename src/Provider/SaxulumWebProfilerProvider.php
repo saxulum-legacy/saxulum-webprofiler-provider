@@ -45,9 +45,9 @@ class SaxulumWebProfilerProvider implements ServiceProviderInterface
             ));
 
             $app['data_collectors'] = $app->extend('data_collectors',
-                $app->share(function(Application $app, array $dataCollectors) {
+                $app->share(function(array $collectors) use ($app) {
                     if(isset($app['doctrine'])) {
-                        $dataCollectors['db'] = $app['saxulum.orm.datacolletor'];
+                        $collectors['db'] = $app['saxulum.orm.datacolletor'];
                     }
 
                     if(isset($app['doctrine_mongodb'])) {
@@ -60,14 +60,14 @@ class SaxulumWebProfilerProvider implements ServiceProviderInterface
                             }
                         ));
 
-                        $dataCollectors['mongodb'] = $app['saxulum.mongodb.odm.datacolletor'];
+                        $collectors['mongodb'] = $app['saxulum.mongodb.odm.datacolletor'];
                     }
 
-                    return $dataCollectors;
+                    return $collectors;
                 }
             ));
 
-            $app['data_collectors.templates'] = $app->extend('data_collectors.templates',
+            $app['data_collector.templates'] = $app->extend('data_collector.templates',
                 $app->share(function(Application $app, array $dataCollectorTemplates) {
                     if(isset($app['doctrine'])) {
                         $dataCollectorTemplates[] = array('db', '@SaxulumWebProfilerProvider/Collector/db.html.twig');

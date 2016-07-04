@@ -22,7 +22,7 @@ class DoctrineMongoDbLoggerTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->logger = $this->getMock('Symfony\Component\HttpKernel\Log\LoggerInterface');
+        $this->logger = $this->getMockForAbstractClass('Psr\\Log\\LoggerInterface');
     }
 
     protected function tearDown()

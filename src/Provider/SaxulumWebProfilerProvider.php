@@ -2,28 +2,22 @@
 
 namespace Saxulum\SaxulumWebProfiler\Provider;
 
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 use Saxulum\DoctrineMongodbOdmManagerRegistry\Doctrine\ManagerRegistry;
 use Saxulum\SaxulumWebProfiler\DataCollector\DoctrineDataCollector;
 use Saxulum\SaxulumWebProfiler\DataCollector\DoctrineMongoDbDataCollector;
-use Saxulum\SaxulumWebProfiler\DataCollector\DoctrineMongoDbStandardDataCollector;
 use Saxulum\SaxulumWebProfiler\Logger\DbalLogger;
 use Saxulum\SaxulumWebProfiler\Logger\DoctrineMongoDbAggregateLogger;
 use Saxulum\SaxulumWebProfiler\Logger\DoctrineMongoDbLogger;
 use Saxulum\SaxulumWebProfiler\Twig\DoctrineExtension;
-use Silex\Application;
-use Silex\ServiceProviderInterface;
 
 class SaxulumWebProfilerProvider implements ServiceProviderInterface
 {
     /**
      * {@inheritdoc}
      */
-    public function boot(Application $app) {}
-
-    /**
-     * {@inheritdoc}
-     */
-    public function register(Application $app)
+    public function register(Container $app)
     {
         if (isset($app['profiler'])) {
 

@@ -10,20 +10,25 @@
         }
     ],
     "require": {
-        "php": ">=5.3.9,<8.0",
+        "php": ">=5.5.9,<8.0",
         "jdorn/sql-formatter": "~1.1",
         "psr/log": "1.0.*",
-        "silex/silex": "~1.0",
-        "silex/web-profiler": "~1.0"
+        "silex/silex": "~2.0",
+        "silex/web-profiler": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
-        "saxulum/saxulum-doctrine-mongodb-odm-manager-registry-provider": "~1.0",
-        "saxulum/saxulum-doctrine-orm-manager-registry-provider": "~2.0"
+        "saxulum/saxulum-doctrine-mongodb-odm-manager-registry-provider": "~2.0",
+        "saxulum/saxulum-doctrine-orm-manager-registry-provider": "~3.0"
     },
     "autoload": {
         "psr-4": {
             "Saxulum\\SaxulumWebProfiler\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
         }
     }
 }

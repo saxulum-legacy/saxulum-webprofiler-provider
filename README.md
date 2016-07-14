@@ -16,12 +16,11 @@ Features
 Requirements
 ------------
 
-* php >=5.3
+* php >=5.5
 * jdorn/sql-formatter ~1.1
 * psr/log 1.0.*
-* silex/silex ~1.0
-* silex/web-profiler ~1.0
-* symfony/doctrine-bridge ~2.3
+* silex/silex ~2.0
+* silex/web-profiler ~2.0
 
 
 Installation
@@ -30,7 +29,7 @@ Installation
 The [SilexWebProfiler][1] from silex itself is needed!
 
 ```php
-$app->register(new Silex\Provider\WebProfilerServiceProvider(), array(
+$app->register(new Provider\WebProfilerServiceProvider(), array(
     'profiler.cache_dir' => __DIR__.'/../cache/profiler',
     'profiler.mount_prefix' => '/_profiler', // this is the default
 ));
